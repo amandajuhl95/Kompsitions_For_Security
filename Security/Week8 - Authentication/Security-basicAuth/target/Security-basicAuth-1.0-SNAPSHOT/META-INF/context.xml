@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Security-basicAuth">
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+    driverName="com.mysql.jdbc.Driver"
+    connectionURL="jdbc:mysql://localhost:3306/security?user=dev&amp;password=ax2"
+    userTable="users" 
+    userNameCol="user_email" 
+    userCredCol="user_pass"
+    userRoleTable="user_roles" 
+    roleNameCol="role_name"/>
+</Context>
+
